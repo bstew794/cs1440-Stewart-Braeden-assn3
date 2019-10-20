@@ -114,7 +114,7 @@ stage many tests fail as the program is incomplete.
     user can print just that card to the screen.
 7.  The bingo numbers on a card must be between 1 and `M`, where `M` is the
     user-specified maximum number in the bingo number set, within the range
-    `[2*N2, 4*N2]`.
+    `[2*(N*2), 4*(N*2)]`.
 8.  A card cannot contain duplicates of bingo numbers. Bingo numbers may be duplicated between different cards within the same deck.
 9.  When a new deck is created the previous deck is lost
 10. Bingo cards of odd size must feature a **FREE!** square in the center.
