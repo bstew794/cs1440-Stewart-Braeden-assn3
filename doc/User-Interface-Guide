@@ -1,0 +1,11 @@
+Hello,
+I am mr.DNA and I am here to help guide you through the Bingo game interface. the console will display a menu labeled
+"Main" along with two options, "C" and "X". Pressing "X" on your keyboard will exit the Bingo game interface whilst
+pressing "C" will create a new Bingo deck of cards. You will then be prompted to enter the card size, maximum number on
+the cards, and number of cards in your deck and a new menu called "Deck" will be displayed to interact with your deck.
+These options include: "Print a card to the screen", "Display the whole deck to the screen", and "Save the whole deck to
+a file"; they are activated by pressing "P, D, or S", respectively. Also keep in mind that you must provide the id of
+the card you want to print if you press "P", or the output file name if you press "S" on your keyboard.
+You may press "X" at any these menus to exit the application.
+
+End of Line...
