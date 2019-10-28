@@ -1,0 +1,3 @@
+10/28/2019:
+I got NumberSet to pass its unit tests. However, I had to add a new variable called "currIndex" which I will add to my
+UML later, and I am unsure about how it all works still but I will be committing this version today.
