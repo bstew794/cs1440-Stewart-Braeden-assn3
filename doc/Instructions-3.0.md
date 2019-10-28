@@ -83,9 +83,9 @@ the game of actually not important for this assignment.
 All you need to know is that a Bingo card is an `N x N` grid of bingo numbers,
 where `N` is the size of the card. The typical size is 5, but we'll allow card
 to vary in size from 3 to 15. The numbers of cards come from a set of bingo
-numbers that contains every number from `1` to `M`, where `M` is a user-specified
-max between `2*N2` and `4*N2`. The number of cards in the deck in a user-specified
-value between `3` and `10000`.
+numbers that contains every number from `1` to `M`, where `M` is a
+user-specified max between `2*N*N` and `4*N*N`. The number of cards in the deck
+in a user-specified value between `3` and `10000`.
 
 The starting project contains a text-based user interface that allows a user to
 create a deck, print a card from the current deck, display the entire deck, or
@@ -95,9 +95,10 @@ stage many tests fail as the program is incomplete.
 
 ## Program Requirements Specification
 
-1.  Your solution must include at least one class, called `Deck.` This class
+1.  Your solution must include at least one class, called `Deck`. This class
     must possess the following features and capabilities:
-    -   Construct a deck object given the size of the cards, number of cards, and the maximum numbers in a bingo number set
+    -   Construct a deck object given the size of the cards, number of cards,
+        and the maximum numbers in a bingo number set
     -   A method to print a specific card in the deck to the screen
     -   A method to print whole deck to the screen
     -   A method to print whole deck to a file of the user's choice
@@ -112,10 +113,11 @@ stage many tests fail as the program is incomplete.
 5.  Every card is assigned a unique integer identifier.
 6.  The deck should be able to retrieve a card given the identifier, so the
     user can print just that card to the screen.
-7.  The bingo numbers on a card must be between 1 and `M`, where `M` is the
+7.  The bingo numbers on a card must be between `1` and `M`, where `M` is the
     user-specified maximum number in the bingo number set, within the range
     `[2*N*N, 4*N*N]`.
-8.  A card cannot contain duplicates of bingo numbers. Bingo numbers may be duplicated between different cards within the same deck.
+8.  A card cannot contain duplicates of bingo numbers. Bingo numbers may be
+    duplicated between different cards within the same deck.
 9.  When a new deck is created the previous deck is lost
 10. Bingo cards of odd size must feature a **FREE!** square in the center.
     Even-sized cards don't have a center square and, thus, no **FREE!** square.
@@ -126,6 +128,7 @@ stage many tests fail as the program is incomplete.
 
     Odd-sized card:
 
+    ```
     Card #1
     +-----+-----+-----+-----+-----+
     | 35  | 61  | 32  |  9  | 25  |
@@ -138,9 +141,11 @@ stage many tests fail as the program is incomplete.
     +-----+-----+-----+-----+-----+
     | 68  | 37  | 79  | 59  | 44  |
     +-----+-----+-----+-----+-----+
+    ```
 
     Even-sized card:
 
+    ```
     Card #2
     +-----+-----+-----+-----+
     |  2  | 28  | 38  | 56  |
@@ -151,6 +156,7 @@ stage many tests fail as the program is incomplete.
     +-----+-----+-----+-----+
     |  1  | 61  |  5  | 49  |
     +-----+-----+-----+-----+
+    ```
 
 13. When printing all a deck's cards to the screen or to a file, you may simply
     print every card, one after the other.
