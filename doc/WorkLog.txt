@@ -1,3 +1,6 @@
 10/28/2019:
-I got NumberSet to pass its unit tests. However, I had to add a new variable called "currIndex" which I will add to my
-UML later, and I am unsure about how it all works still but I will be committing this version today.
+I got NumberSet.py to pass its unit tests. However, I had to add a new variable called "currIndex" which I will add to my
+UML later, and I am unsure about how it all works still but I will be committing this version today. Later that day, I
+got Deck.py and Card.py to pass their unit tests; no new variables were added but I am still not finished with Card.py
+and Deck.py to make them fully functional for the generator. My next objective will be to finish those and the user
+interface.

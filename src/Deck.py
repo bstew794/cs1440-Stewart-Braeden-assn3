@@ -6,11 +6,21 @@ import NumberSet
 class Deck():
     def __init__(self, cardSize, cardCount, numberMax):
         """Deck constructor"""
-        pass
+        self.cardSize = cardSize
+        self.cardCount = cardCount
+        self.numberMax = numberMax
+        self.__m_cards = []
+        myNumberSet = NumberSet.NumberSet(numberMax)
+        i = 1
+
+        while i <= cardCount:
+            tempCard = Card.Card(i, self.cardSize, myNumberSet)
+            self.__m_cards.append(tempCard)
+            i += 1
             
     def getCardCount(self):
         """Return an integer: the number of cards in this deck"""
-        pass
+        return self.cardCount
 
 
 

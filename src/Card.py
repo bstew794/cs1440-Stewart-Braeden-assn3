@@ -8,8 +8,7 @@ class Card():
         self.idNum = idnum
         self.size = size
         self.numberSet = numberSet
-        pass
-
+        self.numberSet.randomize()
 
     def getId(self):
         """Return an integer: the ID number of the card"""
