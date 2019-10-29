@@ -4,3 +4,7 @@ UML later, and I am unsure about how it all works still but I will be committing
 got Deck.py and Card.py to pass their unit tests; no new variables were added but I am still not finished with Card.py
 and Deck.py to make them fully functional for the generator. My next objective will be to finish those and the user
 interface.
+
+10/29/2019:
+I have gotten Bingo.py to run properly and meet its requirements; it is now time to add the comments,
+and update the documentation after committing it to gitlab.

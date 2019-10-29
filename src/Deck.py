@@ -7,20 +7,19 @@ class Deck():
     def __init__(self, cardSize, cardCount, numberMax):
         """Deck constructor"""
         self.cardSize = cardSize
-        self.cardCount = cardCount
+        self.__m_cardCount = cardCount
         self.numberMax = numberMax
         self.__m_cards = []
-        myNumberSet = NumberSet.NumberSet(numberMax)
         i = 1
 
         while i <= cardCount:
-            tempCard = Card.Card(i, self.cardSize, myNumberSet)
+            tempCard = Card.Card(i, self.cardSize, NumberSet.NumberSet(numberMax))
             self.__m_cards.append(tempCard)
             i += 1
             
     def getCardCount(self):
         """Return an integer: the number of cards in this deck"""
-        return self.cardCount
+        return self.__m_cardCount
 
 
 
@@ -32,8 +31,7 @@ class Deck():
             card = self.__m_cards[n]
         return card
 
-
-    def print(self, file=sys.stdout, idx=None):
+    def print(self, idx=None, file=sys.stdout):
         """void function: Print cards from the Deck
 
         If an index is given, print only that card.

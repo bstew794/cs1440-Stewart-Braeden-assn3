@@ -34,9 +34,6 @@ class NumberSet():
         if self.size <= 0:
             return None
 
-        if self.currIndex >= self.size:
-            self.currIndex = 0
-
         oldIndex = self.currIndex
         self.currIndex += 1
         return self.numberSet[oldIndex]
