@@ -1,10 +1,11 @@
 10/28/2019:
-I got NumberSet.py to pass its unit tests. However, I had to add a new variable called "currIndex" which I will add to my
-UML later, and I am unsure about how it all works still but I will be committing this version today. Later that day, I
-got Deck.py and Card.py to pass their unit tests; no new variables were added but I am still not finished with Card.py
+I got NumberSet.py to pass its unit tests. However, I had to add a new variable called "currIndex" which I will add to
+my UML later, and I am unsure about how it all works still but I will be committing this version today. Later that day,
+I got Deck.py and Card.py to pass their unit tests; no new variables were added but I am still not finished with Card.py
 and Deck.py to make them fully functional for the generator. My next objective will be to finish those and the user
 interface.
 
 10/29/2019:
 I have gotten Bingo.py to run properly and meet its requirements; it is now time to add the comments,
-and update the documentation after committing it to gitlab.
+and update the documentation after committing it to gitlab. Later that day, I updated the UML and the User Interface
+Guide. I also polished up the product with comments on the functions; This will be my final commit.

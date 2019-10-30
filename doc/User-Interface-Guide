@@ -1,11 +1,75 @@
 Hello,
-I am mr.DNA and I am here to help guide you through the Bingo game interface. the console will display a menu labeled
-"Main" along with two options, "C" and "X". Pressing "X" on your keyboard will exit the Bingo game interface whilst
-pressing "C" will create a new Bingo deck of cards. You will then be prompted to enter the card size, maximum number on
-the cards, and number of cards in your deck and a new menu called "Deck" will be displayed to interact with your deck.
-These options include: "Print a card to the screen", "Display the whole deck to the screen", and "Save the whole deck to
-a file"; they are activated by pressing "P, D, or S", respectively. Also keep in mind that you must provide the id of
-the card you want to print if you press "P", or the output file name if you press "S" on your keyboard.
-You may press "X" at any these menus to exit the application.
+I am mr.DNA, I am here to help guide you through the Bingo card generator interface. the console will display a menu
+labeled "Main" along with two options, "C" and "X" (case-sensitive). Pressing "X" on your keyboard will exit the user
+interface and pressing "C" will create a new Bingo deck of cards. You will be prompted to enter the card size, maximum
+number on the cards, and the number of cards in your deck. I would advise that you read Instructions-3.0.md thoroughly
+for more details on the accepted values for these data fields Afterwards, a new menu called "Deck menu" will be
+displayed to help you interact with your newly created deck.
+
+
+These options include: "P - Print a card to the screen", "D - Display the whole deck to the screen", and "S - Save the
+whole deck to a file"; they are activated by pressing "P, D, or S" (case-sensitive), respectively.
+
+Print a card to the screen:
+Pressing "P" will display the message "Please enter Id of card to print: " which requires you to type the id of the card
+(1, 2, etc). At this point, the card that matches that Id will be displayed to the console.
+
+Card #1
++-----+-----+-----+
+|  15 |  11 |  24 |
++-----+-----+-----+
+|  22 |FREE!|  16 |
++-----+-----+-----+
+|  12 |  8  |  21 |
++-----+-----+-----+
+
+After printing the desired card, you will be returned to "Deck Menu".
+
+Display the whole deck to the screen:
+Pressing "D" will display the entire deck of Bingo cards to the console.
+
+Card #1
++-----+-----+-----+
+|  15 |  11 |  24 |
++-----+-----+-----+
+|  22 |FREE!|  16 |
++-----+-----+-----+
+|  12 |  8  |  21 |
++-----+-----+-----+
+
+Card #2
++-----+-----+-----+
+|  20 |  4  |  6  |
++-----+-----+-----+
+|  13 |FREE!|  23 |
++-----+-----+-----+
+|  24 |  16 |  15 |
++-----+-----+-----+
+
+Card #3
++-----+-----+-----+
+|  24 |  20 |  22 |
++-----+-----+-----+
+|  7  |FREE!|  23 |
++-----+-----+-----+
+|  9  |  19 |  11 |
++-----+-----+-----+
+
+After printing the entire deck, you will be returned to "Deck Menu".
+
+Save the whole deck to a file:
+Pressing "S" will display a message that says "Enter output file name: " which requires you to type in the name of the
+text file you want to save the entire deck of Bingo cards to (must be a pre-existing file in your src folder). You must
+include .txt in filename, and it is case-sensitive. The program will then print the entire deck to the designated .txt
+file and then return you to the "Deck menu".
+
+Exit:
+Pressing "X" will return you to the "Main menu" where you can create a completely new deck by pressing "C" or exit the
+program by pressing "X" once more.
+
+
+Misc:
+Bingo cards that are given an even number for their size will not be generated with a "FREE!" spot.
+
 
 End of Line...
